@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Location Fête & Paddle</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Lightbox / zoom image */
+        dialog#imageDialog {
+            padding: 0;
+            border: none;
+            background: rgba(0, 0, 0, 0.8);
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+
+        dialog#imageDialog img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        dialog#imageDialog::backdrop {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        dialog#imageDialog button {
+            margin-top: 10px;
+            background: #0077b6;
+            color: white;
+            border: none;
+            padding: 0.6rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .items img {
+            cursor: zoom-in;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <img src="20.jpg" alt="Photo en haut de page" class="header-top-image" />
+  <h1>Azur Aventure</h1>
+  <p>Jeune Entreprise Québécoise de Location des Jeux Gonflables résidentiel et commercial, Paddle boards à Saint-Jérôme 📍 🇨🇦</p>
+</header>
+
+<section class="items">
+    <h2>Nos Équipements Disponibles</h2>
+    <div class="grid">
+
+      <!-- Jeux Gonflables -->
+<div class="item">
+   
+        <img src="2.jpg" alt="Jeux Gonflables" onclick="openImage(this.src)">
+       <a href="jeux.html">   <h3>6 Jeux Gonflables</h3>
+    </a>
+    <p>Parfaits pour amuser les enfants lors de vos fêtes.</p>
+</div>
+
+        <!-- Barbe à Papa -->
+        <div class="item">
+            <img src="10.jpg" alt="Barbe à Papa" onclick="openImage(this.src)">
+            <h3>Machine à Barbe à Papa</h3>
+            <p>Apportez une touche sucrée à votre événement.</p>
+        </div>
+
+        <!-- Popcorn -->
+        <div class="item">
+            <img src="15.avif" alt="Popcorn" onclick="openImage(this.src)">
+            <h3>Machine à Popcorn</h3>
+            <p>Un classique pour toutes les fêtes.</p>
+        </div>
+
+        <!-- Chaises pliables -->
+        <div class="item">
+            <img src="13.avif" alt="Chaises pliables" onclick="openImage(this.src)">
+            <h3>Chaises Pliables</h3>
+            <p>Confort et praticité pour vos invités.</p>
+        </div>
+
+        <!-- Tables pliables -->
+        <div class="item">
+            <img src="18.avif" alt="Tables pliables" onclick="openImage(this.src)">
+            <h3>Tables Pliables</h3>
+            <p>Solides et faciles à installer.</p>
+        </div>
+
+        <!-- Paddle Board -->
+        <div class="item">
+            <img src="17.jpg" alt="Paddle Board" onclick="openImage(this.src)">
+            <h3>Paddle Boards</h3>
+            <p>Profitez de l'été sur l'eau avec nos paddles.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact & Réservation</h2>
+    <form action="https://formspree.io/f/xzzjvevk" method="POST">
+        <label for="name">Nom complet :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Date de l'événement :</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="equipment">Matériel souhaité :</label>
+        <select id="equipment" name="equipment" required>
+            <option value="jeux">Jeux gonflables</option>
+            <option value="barbeapapa">Machine à barbe à papa</option>
+            <option value="popcorn">Machine à popcorn</option>
+            <option value="chaises">Chaises pliables</option>
+            <option value="tables">Tables pliables</option>
+            <option value="paddle">Paddle board</option>
+            <option value="tout">Pack complet</option>
+        </select>
+
+        <label for="message">Message complémentaire :</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Envoyer la demande</button>
+    </form>
+
+    <p>📞 Téléphone : +1 579-525-6228</p>
+    <p>📧 Email : azuraventure@gmail.com</p>
+    <p>📍 Région : Saint-Jérôme</p>
+
+    <a class="whatsapp-button" href="https://wa.me/15795256228" target="_blank">
+        📱 Réserver via WhatsApp
+    </a>
+</section>
+
+
+  
+
+<footer>
+    <p>&copy; 2025 Azur Aventure - Tous droits réservés</p>
+</footer>
+
+<!-- Fenêtre d'image agrandie (lightbox) -->
+<dialog id="imageDialog">
+    <img id="dialogImage" src="" alt="Zoom Image" />
+    <button onclick="document.getElementById('imageDialog').close()">✖️ Fermer</button>
+</dialog>
+
+<!-- Script JS -->
+<script>
+    function openImage(src) {
+        const dialog = document.getElementById('imageDialog');
+        const img = document.getElementById('dialogImage');
+        img.src = src;
+        dialog.showModal();
+    }
+</script>
+
+</body>
+</html>
