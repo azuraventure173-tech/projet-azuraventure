@@ -29,7 +29,7 @@ header::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.1); /* Opacité réduite (0.3 au lieu de 0.5) */
+    background: rgba(0, 0, 0, 0.05); /* Opacité réduite (0.3 au lieu de 0.5) */
     z-index: 0;
 }
 
