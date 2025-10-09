@@ -133,6 +133,22 @@
         dialog.showModal();
     }
 </script>
+<script>
+  window.addEventListener('scroll', () => {
+    const carousel = document.getElementById('bottomCarousel');
+    if (window.scrollY > 300) {
+      carousel.classList.add('visible');
+    } else {
+      carousel.classList.remove('visible');
+    }
+  });
 
+  const toggleBtn = document.getElementById('toggleCarouselBtn');
+  const carousel = document.getElementById('bottomCarousel');
+  toggleBtn.addEventListener('click', () => {
+    carousel.classList.toggle('hidden');
+    toggleBtn.classList.toggle('rotate');
+  });
+</script>
 </body>
 </html>
