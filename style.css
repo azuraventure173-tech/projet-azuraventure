@@ -189,3 +189,34 @@ dialog#imageDialog button {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Marquee (défilement) */
+.marquee {
+  width: 100%;
+  background-color: #0077b6;
+  color: white;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.marquee p {
+  display: inline-block;
+  animation: scroll-left 15s linear infinite;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 100%;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
