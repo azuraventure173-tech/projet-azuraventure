@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réservation | Azur Aventure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="marquee">
+    <p>🎉 Location de jeux gonflables, paddle boards, machines à barbe à papa, chaises et tables pliables – Disponible de 9h à 22h 🕘🕙</p>
+  </div>
+</header>
+
+<section class="hero-slider">
+  <div class="slide active" style="background-image: url('2.jpg');">
+    <a href="jeux.html" class="slide-button">Voir Jeux Gonflables</a>
+  </div>
+  <div class="slide" style="background-image: url('10.jpg');">
+    <a href="Accessoiresfete.html" class="slide-button">Accessoires de fête </a>
+  </div>
+  <div class="slide" style="background-image: url('17.jpg');">
+    <a href="paddle.html" class="slide-button">Paddle Boards</a>
+  </div>
+
+</section>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo"><a href="index.html">Azur Aventure</a></div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="jeux.html">Jeux Gonflables</a></li>
+      <li><a href="Accessoiresfete.html">Accessoires de fête</a></li>
+      <li class="has-submenu">
+        <a href="paddle.html">Paddle Board</a>
+ 
+      </li>
+      <li><a href="reservation.html">Réservation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="contact">
+  <h2>Contact & Réservation</h2>
+  <form action="https://formspree.io/f/xzzjvevk" method="POST">
+    <label for="name">Nom complet :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Adresse email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="date">Date de l'événement :</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="equipment">Matériel souhaité :</label>
+    <select id="equipment" name="equipment" required>
+      <option value="jeux">Jeux gonflables</option>
+      <option value="barbeapapa">Machine à barbe à papa</option>
+      <option value="popcorn">Machine à popcorn</option>
+      <option value="chaises">Chaises pliables</option>
+      <option value="tables">Tables pliables</option>
+      <option value="paddle">Paddle board</option>
+      <option value="tout">Pack complet</option>
+    </select>
+
+    <label for="message">Message complémentaire :</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Envoyer la demande</button>
+  </form>
+
+  <p>📞 Téléphone : +1 579-525-6228</p>
+  <p>📧 Email : azuraventure173@gmail.com</p>
+  <p>🕘 Location de 9h00 à 22h00</p>
+  <p>📍 Région : Saint-Jérôme</p>
+
+  <a class="whatsapp-button" href="https://wa.me/15795256228" target="_blank">📱 Réserver via WhatsApp</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 Azur Aventure - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>

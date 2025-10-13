@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Location Paddle Boards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="marquee">
+    <p>🎉 Location de jeux gonflables, paddle boards, machines à barbe à papa, chaises et tables pliables – Disponible de 9h à 22h 🕘🕙</p>
+  </div>
+</header>
+
+<section class="hero-slider">
+  <div class="slide active" style="background-image: url('2.jpg');">
+    <a href="jeux.html" class="slide-button">Voir Jeux Gonflables</a>
+  </div>
+  <div class="slide" style="background-image: url('10.jpg');">
+    <a href="Accessoiresfete.html" class="slide-button">Accessoires de fête </a>
+  </div>
+  <div class="slide" style="background-image: url('17.jpg');">
+    <a href="paddle.html" class="slide-button">Paddle Boards</a>
+  </div>
+
+</section>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo"><a href="index.html">Azur Aventure</a></div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="jeux.html">Jeux Gonflables</a></li>
+      <li><a href="Accessoiresfete.html">Accessoires de fête</a></li>
+      <li><a href="paddle.html" class="active">Paddle Board</a></li>
+      <li><a href="reservation.html">Réservation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="items">
+  <h2>Nos Paddle Boards</h2>
+  <div class="grid">
+
+    <!-- 1er Paddle -->
+    <div class="item">
+      <img src="22.avif" alt="Paddle Board" onclick="openImage(this.src)">
+      <h3>Paddle Board Classique</h3>
+      <p>Profitez de l'été sur l'eau avec nos paddles robustes.</p>
+      <p class="price">30 $ / jour</p>
+    </div>
+
+    <!-- 2e Paddle -->
+    <div class="item">
+      <img src="21.jpg" alt="Paddle Board" onclick="openImage(this.src)">
+      <h3>Paddle Board Aventure</h3>
+      <p>Idéal pour explorer les rivières et les lacs calmes.</p>
+      <p class="price">35 $ / jour</p>
+    </div>
+
+    <!-- 3e Paddle -->
+    <div class="item">
+      <img src="25.webp" alt="Paddle Board" onclick="openImage(this.src)">
+      <h3>Paddle Board XL</h3>
+      <p>Convient aux familles ou aux groupes d'amis.</p>
+      <p class="price">40 $ / jour</p>
+    </div>
+
+    <!-- 4e Paddle -->
+    <div class="item">
+      <img src="23.webp" alt="Paddle Board" onclick="openImage(this.src)">
+      <h3>Paddle Board Premium</h3>
+      <p>Design stylér </p>
+      <p class="price">100 $ / jour</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Réserver votre Paddle</h2>
+  <form action="https://formspree.io/f/xzzjvevk" method="POST">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+    <label for="date">Date :</label>
+    <input type="date" id="date" name="date" required>
+    <input type="hidden" name="equipment" value="paddle">
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+    <button type="submit">Réserver</button>
+  </form>
+
+  <p>📞 Téléphone : +1 579-525-6228</p>
+  <p>📧 Email : azuraventure173@gmail.com</p>
+  <p>📍 Région : Saint-Jérôme</p>
+</section>
+
+<dialog id="imageDialog">
+  <img id="dialogImage" src="" alt="Zoom Image" />
+  <button onclick="document.getElementById('imageDialog').close()">✖️ Fermer</button>
+</dialog>
+
+<script>
+  function openImage(src) {
+    const dialog = document.getElementById('imageDialog');
+    const img = document.getElementById('dialogImage');
+    img.src = src;
+    dialog.showModal();
+  }
+</script>
+
+<footer>
+  <p>&copy; 2025 Azur Aventure - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
