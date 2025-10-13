@@ -15,124 +15,154 @@
   <!-- Si tu veux, tu peux mettre ici le titre, etc. -->
 </header>
 
+<section class="hero-slider">
+  <div class="slide active" style="background-image: url('2.jpg');">
+    <a href="jeux.html" class="slide-button">Voir Jeux Gonflables</a>
+  </div>
+  <div class="slide" style="background-image: url('10.jpg');">
+    <a href="Accessoiresfete.html" class="slide-button">Accessoires de fête </a>
+  </div>
+  <div class="slide" style="background-image: url('17.jpg');">
+    <a href="paddle.html" class="slide-button">Paddle Boards</a>
+  </div>
+
+</section>
+
+
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo"><a href="index.html">Azur Aventure</a></div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="jeux.html">Jeux Gonflables</a></li>
+      <li><a href="Accessoiresfete.html">Accessoires de fête </a></li>
+
+      <li class="has-submenu">
+        <a href="paddle.html">Paddle Board </a>
+       
+      </li>
+      <li><a href="reservation.html">Réservation</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
 
 <section class="items">
-    <h2>Nos Équipements Disponibles</h2>
-    <div class="grid">
+  <h2>Nos Équipements Disponibles</h2>
+  <div class="grid">
 
-        <!-- Jeux Gonflables -->
-        <div class="item">
-    <img src="2.jpg" alt="Jeux Gonflables" onclick="openImage(this.src)">
-    <h3>6 Jeux Gonflables</h3>
-    <p>Parfaits pour amuser les enfants lors de vos fêtes.</p>
-    <p class="price"></p> <!-- pas de prix précis ici -->
-    <a href="jeux.html" class="btn-jeux">Voir les jeux</a>
-</div>
-
-        <!-- Barbe à Papa -->
-        <div class="item">
-            <img src="10.jpg" alt="Barbe à Papa" onclick="openImage(this.src)">
-            <h3>Machine à Barbe à Papa</h3>
-            <p>Apportez une touche sucrée à votre événement.</p>
-            <p class="price">60 $ / jour</p>
-        </div>
-
-        <!-- Popcorn -->
-        <div class="item">
-            <img src="15.avif" alt="Popcorn" onclick="openImage(this.src)">
-            <h3>Machine à Popcorn</h3>
-            <p>Un classique pour toutes les fêtes.</p>
-            <p class="price">50 $ / jour</p>
-        </div>
-
-        <!-- Chaises pliables -->
-        <div class="item">
-            <img src="13.avif" alt="Chaises pliables" onclick="openImage(this.src)">
-            <h3>Chaises Pliables</h3>
-            <p>Confort et praticité pour vos invités.</p>
-            <p class="price">2 $ par chaise</p>
-        </div>
-
-        <!-- Tables pliables -->
-        <div class="item">
-            <img src="18.avif" alt="Tables pliables" onclick="openImage(this.src)">
-            <h3>Tables Pliables</h3>
-            <p>Solides et faciles à installer.</p>
-            <p class="price">5 $ par table</p>
-        </div>
-
-        <!-- Paddle Board -->
-        <div class="item">
-            <img src="17.jpg" alt="Paddle Board" onclick="openImage(this.src)">
-            <h3>Paddle Boards</h3>
-            <p>Profitez de l'été sur l'eau avec nos paddles.</p>
-            <p class="price">40 $ / jour</p>
-        </div>
-
+    <!-- Jeux Gonflables -->
+    <div class="item">
+      <img src="2.jpg" alt="Jeux Gonflables" onclick="openImage(this.src)">
+      <h3>6 Jeux Gonflables</h3>
+      <p>Parfaits pour amuser les enfants lors de vos fêtes.</p>
+      <p class="price"></p>
+      <a href="jeux.html" class="btn-jeux">Voir les jeux</a>
     </div>
+
+    <div class="item">
+      <img src="10.jpg" alt="Barbe à Papa" onclick="openImage(this.src)">
+      <h3>Machine à Barbe à Papa</h3>
+      <p>Apportez une touche sucrée à votre événement.</p>
+      <p class="price">60 $ / jour</p>
+    </div>
+
+    <div class="item">
+      <img src="15.avif" alt="Popcorn" onclick="openImage(this.src)">
+      <h3>Machine à Popcorn</h3>
+      <p>Un classique pour toutes les fêtes.</p>
+      <p class="price">50 $ / jour</p>
+    </div>
+
+    <div class="item">
+      <img src="13.avif" alt="Chaises pliables" onclick="openImage(this.src)">
+      <h3>Chaises Pliables</h3>
+      <p>Confort et praticité pour vos invités.</p>
+      <p class="price">2 $ par chaise</p>
+    </div>
+
+    <div class="item">
+      <img src="18.avif" alt="Tables pliables" onclick="openImage(this.src)">
+      <h3>Tables Pliables</h3>
+      <p>Solides et faciles à installer.</p>
+      <p class="price">5 $ par table</p>
+    </div>
+
+    <div class="item">
+      <img src="17.jpg" alt="Paddle Board" onclick="openImage(this.src)">
+      <h3>Paddle Boards</h3>
+      <p>Profitez de l'été sur l'eau avec nos paddles.</p>
+      <p class="price">40 $ / jour</p>
+    </div>
+
+  </div>
 </section>
 
 <section class="contact">
-    <h2>Contact & Réservation</h2>
-    <form action="https://formspree.io/f/xzzjvevk" method="POST">
-        <label for="name">Nom complet :</label>
-        <input type="text" id="name" name="name" required>
+  <h2>Contact & Réservation</h2>
+  <form action="https://formspree.io/f/xzzjvevk" method="POST">
+    <label for="name">Nom complet :</label>
+    <input type="text" id="name" name="name" required>
 
-        <label for="email">Adresse email :</label>
-        <input type="email" id="email" name="email" required>
+    <label for="email">Adresse email :</label>
+    <input type="email" id="email" name="email" required>
 
-        <label for="date">Date de l'événement :</label>
-        <input type="date" id="date" name="date" required>
+    <label for="date">Date de l'événement :</label>
+    <input type="date" id="date" name="date" required>
 
-        <label for="equipment">Matériel souhaité :</label>
-        <select id="equipment" name="equipment" required>
-            <option value="jeux">Jeux gonflables</option>
-            <option value="barbeapapa">Machine à barbe à papa</option>
-            <option value="popcorn">Machine à popcorn</option>
-            <option value="chaises">Chaises pliables</option>
-            <option value="tables">Tables pliables</option>
-            <option value="paddle">Paddle board</option>
-            <option value="tout">Pack complet</option>
-        </select>
+    <label for="equipment">Matériel souhaité :</label>
+    <select id="equipment" name="equipment" required>
+      <option value="jeux">Jeux gonflables</option>
+      <option value="barbeapapa">Machine à barbe à papa</option>
+      <option value="popcorn">Machine à popcorn</option>
+      <option value="chaises">Chaises pliables</option>
+      <option value="tables">Tables pliables</option>
+      <option value="paddle">Paddle board</option>
+      <option value="tout">Pack complet</option>
+    </select>
 
-        <label for="message">Message complémentaire :</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+    <label for="message">Message complémentaire :</label>
+    <textarea id="message" name="message" rows="4"></textarea>
 
-        <button type="submit">Envoyer la demande</button>
-    </form>
+    <button type="submit">Envoyer la demande</button>
+  </form>
 
-    <p>📞 Téléphone : +1 579-525-6228</p>
-    <p>📧 Email : azuraventure173@gmail.com</p>
+  <p>📞 Téléphone : +1 579-525-6228</p>
+  <p>📧 Email : azuraventure173@gmail.com</p>
+  <p>🕘 Location de 9h00 à 22h00</p>
+  <p>📍 Région : Saint-Jérôme</p>
 
-    <p>🕘 Location de 9h00 à 22h00</p>
-
-    <p>La location Par jour : Rammasage commence 9am et retour jusqu'a 22pm</p>
-
-    <p>📍 Région : Saint-Jérôme</p>
-
-    <a class="whatsapp-button" href="https://wa.me/15795256228" target="_blank">
-        📱 Réserver via WhatsApp
-    </a>
+  <a class="whatsapp-button" href="https://wa.me/15795256228" target="_blank">📱 Réserver via WhatsApp</a>
 </section>
 
 <footer>
-    <p>&copy; 2025 Azur Aventure - Tous droits réservés</p>
+  <p>&copy; 2025 Azur Aventure - Tous droits réservés</p>
+ 
 </footer>
 
-<!-- Fenêtre d'image agrandie (lightbox) -->
 <dialog id="imageDialog">
-    <img id="dialogImage" src="" alt="Zoom Image" />
-    <button onclick="document.getElementById('imageDialog').close()">✖️ Fermer</button>
+  <img id="dialogImage" src="" alt="Zoom Image" />
+  <button onclick="document.getElementById('imageDialog').close()">✖️ Fermer</button>
 </dialog>
 
 <script>
-    function openImage(src) {
-        const dialog = document.getElementById('imageDialog');
-        const img = document.getElementById('dialogImage');
-        img.src = src;
-        dialog.showModal();
-    }
+  function openImage(src) {
+    const dialog = document.getElementById('imageDialog');
+    const img = document.getElementById('dialogImage');
+    img.src = src;
+    dialog.showModal();
+  }
 </script>
+
 <script>
   window.addEventListener('scroll', () => {
     const carousel = document.getElementById('bottomCarousel');
@@ -150,5 +180,85 @@
     toggleBtn.classList.toggle('rotate');
   });
 </script>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.hero-slider .slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) slide.classList.add('active');
+    });
+  }
+
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }, 4000); // Changement toutes les 4 secondes
+</script>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Lazy loading des images
+  const lazyImages = document.querySelectorAll('img[data-src]');
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+        observer.unobserve(img);
+      }
+    });
+  }, {
+    rootMargin: "0px 0px 100px 0px"
+  });
+
+  lazyImages.forEach(img => imageObserver.observe(img));
+
+
+  // 2. Animation des items au scroll
+  const items = document.querySelectorAll('.item');
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, appearOptions);
+
+  items.forEach(item => {
+    item.classList.add('pre-appear'); // initial state hidden (CSS)
+    appearOnScroll.observe(item);
+  });
+
+  // 3. Modal zoom images amélioré avec transition
+  const dialog = document.getElementById('imageDialog');
+  const dialogImage = document.getElementById('dialogImage');
+
+  document.querySelectorAll('.item img').forEach(img => {
+    img.addEventListener('click', () => {
+      dialogImage.src = img.src;
+      dialog.showModal();
+      setTimeout(() => dialog.classList.add('visible'), 10); // ajoute class pour transition
+    });
+  });
+
+  dialog.querySelector('button').addEventListener('click', () => {
+    dialog.classList.remove('visible');
+    setTimeout(() => dialog.close(), 300); // délai pour transition
+  });
+});
+</script>
+
 </body>
 </html>
