@@ -1,95 +1,211 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Nos Jeux Gonflables</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nos Jeux Gonflables</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-  <img src="20.jpg" alt="Photo en haut de page" class="header-top-image" />
-
-
+  <div class="marquee">
+    <p>🎉 Location de jeux gonflables, paddle boards, machines à barbe à papa, chaises et tables pliables – Disponible de 9h à 22h 🕘🕙</p>
+  </div>
 </header>
- 
+
+<section class="hero-slider">
+  <div class="slide active" style="background-image: url('2.jpg');">
+    <a href="jeux.html" class="slide-button">Voir Jeux Gonflables</a>
+  </div>
+  <div class="slide" style="background-image: url('10.jpg');">
+    <a href="Accessoiresfete.html" class="slide-button">Accessoires de fête </a>
+  </div>
+  <div class="slide" style="background-image: url('17.jpg');">
+    <a href="paddle.html" class="slide-button">Paddle Boards</a>
+  </div>
+
+</section>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo"><a href="index.html">Azur Aventure</a></div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="jeux.html">Jeux Gonflables</a></li>
+      <li><a href="Accessoiresfete.html">Accessoires de fête </a></li>
+
+      <li class="has-submenu">
+        <a href="paddle.html">Paddle Board </a>
+     
+      </li>
+      <li><a href="reservation.html">Réservation</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+
 <section class="items">
-    <div class="grid">
+  <h2>Nos Jeux Gonflables</h2>
+  <div class="grid">
 
-        <!-- Spider-Man -->
-        <div class="item">
-            <img src="2.jpg" alt="Jeu gonflable Spider-Man" onclick="openImage(this.src)">
-            <h3>Jeu Gonflable Spider-Man</h3>
-            <p>Parfait pour les petits fans de super-héros ! Avec des obstacles et une zone de saut.</p>
-            <p class="price">150$/jour</p>
-        </div>
-
-        <!-- Château Princesse -->
-        <div class="item">
-            <img src="5.jpg" alt="Château Princesse" onclick="openImage(this.src)">
-            <h3>Château Princesse</h3>
-            <p>Un univers magique pour les princesses avec couleurs pastel et déco féerique.</p>
-            <p class="price">60$/jour</p>
-        </div>
-
-        <!-- Zoo -->
-        <div class="item">
-            <img src="7.jpg" alt="Jeu de Zoo" onclick="openImage(this.src)">
-            <h3>Jeu Gonflable Zoo</h3>
-            <p>Des animaux rigolos et une ambiance safari pour les enfants aventuriers.</p>
-            <p class="price">60$/jour</p>
-        </div>
-
-        <!-- Château avec glissade -->
-        <div class="item">
-            <img src="1.jpg" alt="Château avec Glissade" onclick="openImage(this.src)">
-            <h3>Château Gonflable avec Glissade</h3>
-            <p>Une glissade intégrée à un château coloré pour doubler l’amusement.</p>
-            <p class="price">80$/jour</p>
-        </div>
-
-        <!-- Glissade + Piscine -->
-        <div class="item">
-            <img src="6.jpg" alt="Glissade avec Piscine" onclick="openImage(this.src)">
-            <h3>Glissade avec Piscine</h3>
-            <p>Glisse dans l’eau pour l'été ! Adapté aux enfants +3 ans.</p>
-            <p class="price">80$/jour</p>
-        </div>
-
-        <!-- Château Blanc + Balles -->
-        <div class="item">
-            <img src="9.avif" alt="Château blanc fête avec balles" onclick="openImage(this.src)">
-            <h3>Château Blanc + Balles</h3>
-            <p>Parfait pour les mariages, baptêmes, ou baby showers – design élégant et épuré.</p>
-            <p class="price">80$/jour</p>
-        </div>
-
+    <div class="item">
+      <img src="2.jpg" alt="Jeu Gonflable Spider-Man" onclick="openImage(this.src)">
+      <h3>Jeu Gonflable Spider-Man</h3>
+      <p>Parfait pour les petits fans de super‑héros ! Obstacles et zone de saut.</p>
+      <p class="price">150$/jour</p>
     </div>
+
+    <div class="item">
+      <img src="5.jpg" alt="Château Princesse" onclick="openImage(this.src)">
+      <h3>Château Princesse</h3>
+      <p>Un univers magique pour les princesses avec couleurs pastel et déco féerique.</p>
+      <p class="price">60$/jour</p>
+    </div>
+
+    <div in class="item">
+      <img src="7.jpg" alt="Jeu Zoo" onclick="openImage(this.src)">
+      <h3>Jeu Gonflable Zoo</h3>
+      <p>Des animaux rigolos et une ambiance safari pour les enfants.</p>
+      <p class="price">60$/jour</p>
+    </div>
+
+    <div class="item">
+      <img src="1.jpg" alt="Château avec Glissade" onclick="openImage(this.src)">
+      <h3>Château avec Glissade</h3>
+      <p>Une glissade intégrée à un château coloré pour doubler l’amusement.</p>
+      <p class="price">80$/jour</p>
+    </div>
+
+    <div class="item">
+      <img src="6.jpg" alt="Glissade avec Piscine" onclick="openImage(this.src)">
+      <h3>Glissade avec Piscine</h3>
+      <p>Glisse dans l’eau pour l’été ! Adapté aux enfants +3 ans.</p>
+      <p class="price">80$/jour</p>
+    </div>
+
+    <div class="item">
+      <img src="9.avif" alt="Château Blanc + Balles" onclick="openImage(this.src)">
+      <h3>Château Blanc + Balles</h3>
+      <p>Parfait pour mariages, baptêmes, baby showers – design épuré.</p>
+      <p class="price">80$/jour</p>
+    </div>
+
+  </div>
 </section>
 
 <section class="contact">
-    <a href="index.html" class="back-button">⬅️ Retour à l'accueil</a>
+  <a href="index.html" class="back-button">⬅️ Retour à l'accueil</a>
 </section>
 
+
+<section class="contact">
+  <h2>Contact & Réservation</h2>
+  <form action="https://formspree.io/f/xzzjvevk" method="POST">
+    <label for="name">Nom complet :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Adresse email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="date">Date de l'événement :</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="equipment">Matériel souhaité :</label>
+    <select id="equipment" name="equipment" required>
+      <option value="jeux">Jeux gonflables</option>
+      <option value="barbeapapa">Machine à barbe à papa</option>
+      <option value="popcorn">Machine à popcorn</option>
+      <option value="chaises">Chaises pliables</option>
+      <option value="tables">Tables pliables</option>
+      <option value="paddle">Paddle board</option>
+      <option value="tout">Pack complet</option>
+    </select>
+
+    <label for="message">Message complémentaire :</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Envoyer la demande</button>
+  </form>
+
+  <p>📞 Téléphone : +1 579-525-6228</p>
+  <p>📧 Email : azuraventure173@gmail.com</p>
+  <p>🕘 Location de 9h00 à 22h00</p>
+  <p>📍 Région : Saint-Jérôme</p>
+
+  <a class="whatsapp-button" href="https://wa.me/15795256228" target="_blank">📱 Réserver via WhatsApp</a>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <footer>
-    <p>&copy; 2025 Location Fête & Paddle - Tous droits réservés</p>
-    <p>Email : <a href="mailto:azuraventure173@gmail.com">azuraventure173@gmail.com</a></p>
-    <p>Journée de location : 9h00 - 22h00</p>
+  <p>&copy; 2025 Azur Aventure - Tous droits réservés</p>
+
 </footer>
 
 <dialog id="imageDialog">
-    <img id="dialogImage" src="" alt="Zoom Image" />
-    <button onclick="document.getElementById('imageDialog').close()">✖️ Fermer</button>
+  <img id="dialogImage" src="" alt="Zoom Image" />
+  <button onclick="document.getElementById('imageDialog').close()">✖️ Fermer</button>
 </dialog>
 
 <script>
-function openImage(src) {
+  function openImage(src) {
     const dialog = document.getElementById('imageDialog');
     const img = document.getElementById('dialogImage');
     img.src = src;
     dialog.showModal();
-}
+  }
 </script>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const carousel = document.getElementById('bottomCarousel');
+    if (window.scrollY > 300) {
+      carousel.classList.add('visible');
+    } else {
+      carousel.classList.remove('visible');
+    }
+  });
+</script>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.hero-slider .slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) slide.classList.add('active');
+    });
+  }
+
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }, 4000); // Changement toutes les 4 secondes
+</script>
+
+
 </body>
 </html>
